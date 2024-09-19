@@ -1,0 +1,175 @@
+@keyframes glitch {
+
+    0%,
+    100% {
+
+  
+        background-size: cover;
+    }
+
+    92.5% {
+
+        background: url('../img/glitch-image-1726746753.png');
+        background-size: cover;
+        /* filter: drop-shadow(.05px -1.75px 0 rgba(255, 0, 0, 0.25)) 
+        drop-shadow(-1.25px 3.15px 0 rgba(0, 255, 0, 0.25)) 
+        drop-shadow(-1.25px -2.5px 0 rgba(0, 0, 255, 0.25)); */
+        opacity: 1;
+
+
+    }
+
+    95% {
+        background: url('../img/glitch-image-1726746756.png');
+        background-size: cover;
+        opacity: 0;
+    }
+
+    97.5% {
+        background: url('../img/glitch-image-1726746761.png');
+        background-size: cover;
+        /* filter: drop-shadow(.5px .75px 0 rgba(255, 0, 0, 0.25)) 
+        drop-shadow(0.25px -1.15px 0 rgba(0, 255, 0, 0.25)) 
+        drop-shadow(.25px 2.5px 0 rgba(0, 0, 255, 0.35)); */
+        opacity: 1;
+    }
+
+ 
+
+    98.5% {
+        background: url('../img/glitch-image-1726746764.png');
+        background-size: cover;
+        opacity: 0;
+        
+    }
+
+    62.5% {
+        background: url('../img/glitch-image-1726746766.png');
+        background-size: cover;
+        opacity: 1;
+    }
+
+    65% {
+        background: url('../img/glitch-image-1726746749.png');
+        background-size: cover;
+        /* filter: drop-shadow(0.3px 0.6px 0 rgba(255, 0, 0, 0.25)) 
+        drop-shadow(-0.6px 1.25px 0 rgba(0, 255, 0, 0.25)) 
+        drop-shadow(0.6px -1px 0 rgba(0, 0, 255, 0.25)); */
+    }
+
+    
+    67.5% {
+
+        background: url('../img/glitch-image-1726747148.png');
+        background-size: cover;
+    }
+
+    68.5% {
+        background: url('../img/glitch-image-1726747148.png');
+        background-size: cover;
+    }
+
+    92.5% {
+        background: url('../img/glitch-image-1726746764.png');
+        background-size: cover;
+        /* filter: drop-shadow(0.4px 0.6px 0 rgba(255, 0, 0, 0.25)) 
+        drop-shadow(-0.6px 1.2px 0 rgba(0, 255, 0, 0.25)) 
+        drop-shadow(0.6px -0.4px 0 rgba(0, 0, 255, 0.25));*/
+    } 
+
+    95% {
+        background: url('../img/glitch-image-1726746766.png');
+        background-size: cover;
+    }
+} 
+
+@keyframes moveAndClip {
+
+    0% {
+        transform: translate(-50%, -50%);
+        clip-path: polygon(0 0, 20% 10%, 0% 5%, 0 100%);
+        opacity: 1;
+    }
+
+    8% {
+        transform: translate(-50%, -50%);
+        clip-path: polygon(10% 20%, 90% 30%, 100% 80%, 0 70%);
+        opacity: 0.3;
+    }
+
+    1% {
+        transform: translate(-50%, -50%);
+        clip-path: polygon(10% 20%, 90% 30%, 100% 80%, 0 70%);
+        opacity: 0.3;
+    }
+
+    0% {
+        transform: translate(-50%, -49%);
+        clip-path: polygon(5% 5%, -52% 25%, 100% -85%, 15% -75%);
+        opacity: 1;
+    }
+
+    15% {
+        transform: translate(-52%, -47%);
+        clip-path: polygon(0% 25%, 5% 5%, -90% 5%, 5% 100%);
+        opacity: 1;
+    }
+
+} 
+
+<>
+<div className="background">
+
+        <div className="align">
+            <div className="content">
+                <h1 className='font'>Lessons and insights <strong>from 8 years</strong></h1>
+                <p>Where to grow your business as a photographer: site or social media?</p>
+
+                <ul>
+                    <li className="no-list-style">
+                        <Link to="/More" className="more-link">Register</Link>
+                    </li>
+                </ul>
+            </div>
+
+            <img src={images.imgOne} alt="Photographer's insight" className='logo-png' />
+        </div>
+ 
+</div>
+
+
+
+
+<div className="our-clients">
+    <h1>Our Clients</h1>
+    <p>We have been working with some Fortune 500+ clients</p>
+</div>
+
+<div className="clients">
+<img src={images.img1} alt=""/>
+<img src={images.img2} alt=""/>
+<img src={images.img3} alt=""/>
+<img src={images.img4} alt=""/>
+<img src={images.img5} alt=""/>
+<img src={images.img6} alt=""/>
+<img src={images.img7} alt=""/>
+
+
+
+
+</div>
+
+<div className='aling'>
+<div className="manage">
+    <h1>Manage your entire community in a single system</h1>
+    <p>Who is Nextcent suitable for?
+    </p>
+</div>
+</div>
+
+<div className="block">
+   
+</div>
+
+
+</>
