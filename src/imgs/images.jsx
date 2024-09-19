@@ -7,9 +7,14 @@ import img4 from './L4.png'; // Importação direta da imagem
 import img5 from './L5.png'; // Importação direta da imagem
 import img6 from './L6.png'; // Importação direta da imagem
 import img7 from './L7.png'; // Importação direta da imagem
+import svg from './svg.svg'; // Importação direta da imagem
+import logo from './spidermans.png'; // Importação direta da imagem
+
+import back from './background.jpg';
+import window from './window.svg';
 
 const images = {
-    imgOne, img1,img2,img3,img4,img5,img6,img7
+    imgOne, img1,img2,img3,img4,img5,img6,img7,svg,logo,back,window
 };
 
 export default images;
