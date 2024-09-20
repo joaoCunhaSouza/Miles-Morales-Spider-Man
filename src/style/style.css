@@ -57,59 +57,59 @@ body {
 }
 
 
-/* .jhon.first {
+ .jhon.first {
     z-index: 3;
     animation: moveAndClip 1.5s infinite steps(20);
     clip-path: polygon(0 80%, 100% 10%, 0% 0%, 0 100%);
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-} */
+} 
 
-/* .jhon.second {
+ .jhon.second {
     z-index: 2;
     animation: moveAndClip 2.5s infinite steps(20);
     clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-} */
+} 
 
-/* .jhon.third {
+.jhon.third {
     z-index: 1;
     animation: moveAndClip 1.5s infinite steps(20);
     clip-path: polygon(0 20%, 100% 20%, 20% 80%, 0 80%);
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-} */
+} 
 
-/* .jhon.four {
+.jhon.four {
     z-index: 1;
     animation: moveAndClip 1.5s infinite steps(20);
     clip-path: polygon(0 40%, 100% 100%, 20% 80%, 0 80%);
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-} */
+} 
 
-/* .jhon.five {
+.jhon.five {
     z-index: 1;
     animation: moveAndClip 1.5s infinite steps(20);
     clip-path: polygon(0 10%, 90% 100%, 10% 0, 0 0);
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-} */
+} 
 
-/* .jhon.six {
+.jhon.six {
     z-index: 1;
     animation: moveAndClip 1.5s infinite steps(20);
     clip-path: polygon(0 100%, -10% 10%, 10% 0, 0 0);
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-} */
+} 
 
 
 
