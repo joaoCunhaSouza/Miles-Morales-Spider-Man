@@ -1,39 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-.parallax {
-    min-height: 75vh;
-    display: grid;
-    grid-template-areas: "stack";
-    position: relative; /* Cria um contexto de empilhamento */
+body{
+    font-family: 'inter';
+    background-color: #000C1A;
 }
 
-.parallax > * {
-    grid-area: stack;
+
+.primary-header{
+    display: flex;
+    align-items: center;
+
+  
+
 }
 
-.parallax > img {
-    width: 100%;
+.primary-nav .list {
+    display: flex;
+    gap: 115px;
+    margin-left: 1000px; /* Move a lista para a direita */
 }
 
-.back {
-    z-index: 1; /* Fica no fundo de tudo */
-    min-height: 100vh;
-    width: 100vh;
-    object-fit: cover;
-    position: relative;
+
+
+.list li{
+    list-style-type: none;
+    right: 10px;
+  
 }
 
-.window {
-    z-index: 2; /* Vem acima do fundo (.back) */
-    position: relative;
-}
-
-.logo-png {
-    z-index: 3; /* Fica acima do window, mas abaixo do logo Marvel */
-    position: relative;
-}
-
-.logo-marvel {
-    z-index: 4; /* Fica acima de todos os outros elementos */
-    position: relative;
+a{
+    text-decoration: none;
+    color: white;
+    
 }

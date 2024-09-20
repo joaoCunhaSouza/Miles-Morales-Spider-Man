@@ -8,15 +8,13 @@ function Content() {
     <>
       {/* Seção de fundo e conteúdo principal */}
 
-      <div className="parallax">
+
 
         <header className="primary-header">
-          <div className="wrapper">
-            <div className="primary-header-inner">
-              <div className="logo">
-              <img src={images.svg} alt="Photographer's insight" className="logo-png" />
-              </div>
 
+  
+              <img src={images.svg} alt="Photographer's insight" className="logo-png" />
+              
 
               <nav className="primary-nav">
                 <ul className="list">
@@ -27,29 +25,11 @@ function Content() {
                 </ul>
               </nav>
 
-              <img src={images.logo} alt="Photographer's insight" className="logo-marvel" />
-            </div>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex provident expedita officia odio quis nulla fuga quae omnis sed laborum iure, maiores sapiente vitae doloremque exercitationem magnam numquam asperiores sunt?</p>
-
-            <div className="button">
-              <button>Pre-order-now</button>
-              <button>Watch-trailer</button>
-            </div>
-          </div>
-
-        </header>
-        <img src={images.back} alt="Photographer's insight" className="back" />
-        <img src={images.window} alt="Photographer's insight" className="window" />
+            </header>
+        
 
 
-
-        <div className="h">1</div>
-      </div>
-
-
-
-
+           
     </>
   );
 }
