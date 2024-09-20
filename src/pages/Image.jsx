@@ -5,8 +5,11 @@ function Image() {
   const glitchImages = Array(6).fill('../img/miles-900px.svg'); 
 
   return (
+    
     <div className="image">
+      
       <div className="image-overlay">
+  
         <div className="miles-container">
           {glitchImages.map((src, index) => (
             <span className="glitch" key={index}>
@@ -16,9 +19,13 @@ function Image() {
             </span>
           ))}
 
-        
+      
+
+
           <img src="../img/miles-900px.svg" alt="Miles SVG" className="miles-svg" />
         </div>
+
+        <div className="glitch-background"></div>
 
         <div className="loader">
           <div></div>
