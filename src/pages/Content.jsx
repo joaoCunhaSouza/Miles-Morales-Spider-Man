@@ -21,7 +21,7 @@ function Content() {
             <li><a href="#">Home</a></li>
             <li><a href="#">Story</a></li>
             <li><a href="#">Wallpapers</a></li>
-            <li><a href="#">SpiderMan2</a></li>
+            <li><a href="#">Spider-Man 2</a></li>
           </ul>
         </nav>
 

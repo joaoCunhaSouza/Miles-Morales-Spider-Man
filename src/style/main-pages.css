@@ -2,38 +2,51 @@
 
 body{
     font-family: 'inter';
-    background-color: #000C1A;
+    background-color: #000c1aa6;
 }
 
 
-.primary-header{
+/* Estilos do header */
+.primary-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
+    position: absolute;
+    z-index: 10; /* Garante que o header fique acima do background */
+  }
   
-
-}
-
-.back{
-    
-}
-
-.primary-nav .list {
+  .primary-nav .list {
     display: flex;
-    gap: 115px;
-    margin-left: 1000px; /* Move a lista para a direita */
-}
-
-
-
-.list li{
+    gap: 150px;
+    margin-left: 500px;
+    align-items: center;
+    justify-content: center;
     list-style-type: none;
-    right: 10px;
+  }
   
-}
-
-a{
+  .primary-nav .list li a {
     text-decoration: none;
     color: white;
-    
-}
+    font-size: 18px;
+
+  }
+  
+  /* Estilos do background */
+  .background-container {
+    position: relative;
+    z-index: 0; /* Background deve estar abaixo do header */
+    width: 100%;
+    height: 100vh; /* A altura ocupará a tela inteira */
+    overflow: hidden; /* Garante que a imagem não saia da tela */
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz com que a imagem cubra toda a área da div */
+    z-index: -1; /* Coloca a imagem de fundo atrás de outros elementos */
+  }
