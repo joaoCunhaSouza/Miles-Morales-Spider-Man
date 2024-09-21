@@ -1,52 +1,214 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-body{
-    font-family: 'inter';
-    background-color: #000c1aa6;
+
+
+body {
+  font-family: 'inter';
+  background-color: #000c1aa6;
 }
 
 
-/* Estilos do header */
+.aside {
+  position: absolute;
+  left: 0; /* Fica colado no lado esquerdo */
+  top: 0; /* Fica no topo da tela */
+  height: 100vh; /* Ocupa toda a altura da tela */
+  width: 77px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Espaço entre os elementos */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  z-index: 100; /* Coloca a aside acima de outros elementos */
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Espaçamento entre os ícones */
+}
+
+.redes i {
+  font-size: 24px; /* Tamanho dos ícones */
+  color: white; /* Cor dos ícones */
+  cursor: pointer;
+}
+
+.svgs {
+  width: 100px; /* Ajuste o tamanho da imagem do logo */
+  height: auto;
+}
+
+.invisible {
+  height: 50px; /* Apenas um espaçamento, pode ajustar conforme necessário */
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .primary-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  position: absolute;
+  z-index: 10;
+}
 
-    position: absolute;
-    z-index: 10; /* Garante que o header fique acima do background */
-  }
-  
-  .primary-nav .list {
-    display: flex;
-    gap: 150px;
-    margin-left: 500px;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-  }
-  
-  .primary-nav .list li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
+.primary-nav .list {
+  display: flex;
+  gap: 115px;
+  margin-left: 1000px;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
 
-  }
-  
-  /* Estilos do background */
-  .background-container {
-    position: relative;
-    z-index: 0; /* Background deve estar abaixo do header */
-    width: 100%;
-    height: 100vh; /* A altura ocupará a tela inteira */
-    overflow: hidden; /* Garante que a imagem não saia da tela */
-  }
-  
-  .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Faz com que a imagem cubra toda a área da div */
-    z-index: -1; /* Coloca a imagem de fundo atrás de outros elementos */
-  }
+li {
+
+  list-style-type: none;
+
+}
+
+a {
+  text-decoration: none;
+  color: rgba(238, 238, 238, 0.75);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.primary-nav .list li a:hover,
+.primary-nav .list li a.active:hover {
+  color: #D30033;
+}
+
+.primary-nav .list li a:not(.active):hover {
+  color: #D30033;
+}
+
+.primary-nav .list li a.active:not(:hover) {
+  color: #D30033;
+}
+
+.background-logo {
+  position: absolute;
+  top: 100px;
+  left: 350px;
+  width: 900px;
+  z-index: 20;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+
+.logo {
+  display: block;
+  width: 100%;
+}
+
+p {
+  font-family: 'Inter';
+  font-weight: 310;
+  color: white;
+  margin-top: 20px;
+  width: 50%;
+}
+
+.container-link {
+  display: flex;
+  width: 400px;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.PRE-ORDER-NOW,
+.WATCH-TRAILER {
+  background-color: #D30033;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 35px;
+  text-align: center;
+  flex: 1;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+.PRE-ORDER-NOW:hover,
+.WATCH-TRAILER:hover {
+  background-color: #ffffff;
+}
+
+.PRE-ORDER-NOW:hover h1 {
+  color: #D30033;
+}
+
+.WATCH-TRAILER:hover h1 {
+  color: #D30033;
+}
+
+.background-container {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-windows {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.miles {
+  position: relative;
+  z-index: 5;
+  margin-left: 1100px;
+  margin-top: 60px;
+
+}
+
+.transparent {
+  position: relative;
+  z-index: 5;
+  filter: blur(.5px);
+  margin-left: 920px;
+  margin-top: 150px;
+  overflow: hidden;
+
+}
+
+.windows {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(.5px);
+
+}
