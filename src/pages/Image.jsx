@@ -32,6 +32,7 @@ function Image() {
         </div>
       </div>
     </div>
+    
   );
 }
 

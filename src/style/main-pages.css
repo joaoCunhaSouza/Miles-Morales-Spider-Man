@@ -10,48 +10,37 @@ body {
 
 .aside {
   position: absolute;
-  left: 0; /* Fica colado no lado esquerdo */
-  top: 0; /* Fica no topo da tela */
-  height: 100vh; /* Ocupa toda a altura da tela */
+  left: 0; 
+  top: 0;
+  height: 100vh;
   width: 77px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Espaço entre os elementos */
-  align-items: center; /* Centraliza os itens horizontalmente */
-  z-index: 100; /* Coloca a aside acima de outros elementos */
+  justify-content: space-between;
+  align-items: center; 
+  z-index: 100; 
 }
 
 .redes {
   display: flex;
   flex-direction: column;
-  gap: 25px; /* Espaçamento entre os ícones */
+  gap: 25px;
 }
 
 .redes i {
-  font-size: 24px; /* Tamanho dos ícones */
-  color: white; /* Cor dos ícones */
+  font-size: 24px;
+  color: white; 
   cursor: pointer;
 }
 
 .svgs {
-  width: 100px; /* Ajuste o tamanho da imagem do logo */
+  width: 100px;
   height: auto;
 }
 
 .invisible {
-  height: 50px; /* Apenas um espaçamento, pode ajustar conforme necessário */
+  height: 50px; 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .primary-header {
   display: flex;
@@ -104,7 +93,7 @@ a {
   width: 900px;
   z-index: 20;
   padding: 20px;
-  border-radius: 10px;
+
 
 }
 
@@ -166,7 +155,7 @@ h1 {
 }
 
 .background-windows {
-  position: relative;
+  position: absolute;
   z-index: 0;
   width: 100%;
   height: 100vh;
@@ -174,20 +163,24 @@ h1 {
 }
 
 .miles {
-  position: relative;
+  position: absolute;
   z-index: 5;
   margin-left: 1100px;
   margin-top: 60px;
+  bottom: 0;
+  height: 95vh;
 
 }
 
 .transparent {
-  position: relative;
+  position: absolute;
   z-index: 5;
-  filter: blur(.5px);
+  filter: blur(1.05px);
   margin-left: 920px;
   margin-top: 150px;
-  overflow: hidden;
+  bottom: 0;
+  height: 95vh;
+ 
 
 }
 
@@ -197,8 +190,9 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
+  background-position: center;
   object-fit: cover;
-  z-index: -1;
+
 }
 
 .background {
@@ -207,8 +201,9 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
+  background-position: center;
   object-fit: cover;
   z-index: -1;
-  filter: blur(.5px);
+  filter: blur(1.5px);
 
 }
